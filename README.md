@@ -1,2 +1,7 @@
-# landing-page-express
-landing page "Room Homepage" from frontendmentor using webpack, express, ts, react as static html template engine with ReactDOM.Server.renderToStaticMarkup 
+# express-landing-page
+landing page "Room Homepage" from [frontendmentor challenge](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq) using:
+- webpack (managed directly)
+- express
+- TypeScript
+- React as static html template engine with ReactDOM.Server.renderToStaticMarkup
+- vanilla-extract sprinkles
