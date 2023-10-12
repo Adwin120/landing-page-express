@@ -4,7 +4,7 @@ import page from "./page";
 const app = express();
 const port = 3030;
 
-app.use(express.static("./dist/assets"))
+app.use(express.static("./dist/assets"));
 
 app.get("/", (_, res) => {
     res.send(page);

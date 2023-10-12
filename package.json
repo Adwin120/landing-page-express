@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
-    "watch": "webpack --watch",
+    "watch": "set NODE_ENV=development&& webpack",
     "start": "node ./dist/bundle.js"
   },
   "keywords": [],
@@ -19,11 +19,14 @@
     "@vanilla-extract/webpack-plugin": "^2.3.1",
     "css-loader": "^6.8.1",
     "mini-css-extract-plugin": "^2.7.6",
+    "nodemon": "^3.0.1",
+    "nodemon-webpack-plugin": "^4.8.2",
     "ts-loader": "^9.5.0",
     "typescript": "^5.2.2",
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4",
-    "webpack-node-externals": "^3.0.0"
+    "webpack-node-externals": "^3.0.0",
+    "webpack-shell-plugin": "^0.5.0"
   },
   "dependencies": {
     "@vanilla-extract/css": "^1.13.0",
