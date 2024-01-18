@@ -1,6 +1,7 @@
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
-import { container } from "./page.css";
+import { rootStyles } from "./styles/theme.css";
+import TopBar from "./components/TopBar"
 
 const Page = () => {
     return (
@@ -11,9 +12,8 @@ const Page = () => {
                 <title>Document</title>
                 <link rel="stylesheet" href="main.css" />
             </head>
-            <body>
-                <p className={container}>test</p>
-                <button>click me</button>
+            <body className={rootStyles}>
+                <TopBar/>
             </body>
         </html>
     );
