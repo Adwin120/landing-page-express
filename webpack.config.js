@@ -9,7 +9,7 @@ const { NODE_ENV } = process.env;
 
 module.exports = {
     entry: "./src/index.ts",
-    mode: NODE_ENV ?? "production",
+    mode: "production",
     watch: NODE_ENV === "development",
     target: "node20.5",
     externals: [nodeExternals()],
@@ -17,7 +17,22 @@ module.exports = {
         rules: [
             {
                 test: /\.tsx?$/,
-                use: "ts-loader",
+                use: {
+                    loader: "ts-loader",
+                    options: {
+                        transpileOnly: true,
+                    },
+                },
+                exclude: /node_modules/,
+            },
+            {
+                test: /\.svg$/i,
+                use: [
+                    {
+                        loader: "@svgr/webpack",
+                        options: { icon: true, replaceAttrValues: { "#FFF": "{props.color}" } },
+                    },
+                ],
                 exclude: /node_modules/,
             },
             {
@@ -46,7 +61,7 @@ module.exports = {
         new VanillaExtractPlugin(),
         new MiniCssExtractPlugin({ filename: "assets/main.css" }),
         new NodemonWebpackPlugin({
-            script: './dist/server.js'
+            script: "./dist/server.js",
         }),
     ],
 };
