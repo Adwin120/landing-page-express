@@ -10,8 +10,12 @@ export const stack = recipe({
             column: { flexDirection: "column" }
         },
         align: {
-            center: { alignItems: "center" },
-            normal: { alignItems: "normal" }
+            normal: { alignItems: "normal" },
+            center: { alignItems: "center" }
+        },
+        justify: {
+            normal: { justifyContent: "normal" },
+            center: { justifyContent: "center" }
         },
         gap: {
             none: { gap: "initial" },
@@ -25,4 +29,9 @@ export const stack = recipe({
         align: "normal",
         gap: "none"
     }
+});
+
+export const centerContents = stack({
+    justify: "center",
+    align: "center"
 });
