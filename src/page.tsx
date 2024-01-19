@@ -3,6 +3,7 @@ import { renderToStaticMarkup } from "react-dom/server";
 import { rootStyles } from "./styles/theme.css";
 import { TopBar } from "./components/TopBar";
 import { Carousel } from "./components/carousel/Carousel";
+import { AboutUs } from "./components/about-us/AboutUs";
 
 const Page = () => {
     return (
@@ -19,6 +20,7 @@ const Page = () => {
             <body className={rootStyles}>
                 <TopBar />
                 <Carousel />
+                <AboutUs />
             </body>
         </html>
     );

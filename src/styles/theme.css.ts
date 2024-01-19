@@ -23,6 +23,7 @@ export const [themeProviderClass, theme] = createTheme({
 export const rootStyles = style([
     themeProviderClass,
     {
+        margin: 0,
         fontSize: theme.typography.bodyFontSize,
         fontFamily: theme.typography.fontFamily,
     },
