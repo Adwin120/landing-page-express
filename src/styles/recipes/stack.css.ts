@@ -15,7 +15,8 @@ export const stack = recipe({
         },
         justify: {
             normal: { justifyContent: "normal" },
-            center: { justifyContent: "center" }
+            center: { justifyContent: "center" },
+            spaceBetween: {justifyContent: "space-between"}
         },
         gap: {
             none: { gap: "initial" },
