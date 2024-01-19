@@ -3,5 +3,5 @@ landing page "Room Homepage" from [frontendmentor challenge](https://www.fronten
 - webpack (managed directly)
 - express
 - TypeScript
-- React as static html template engine with ReactDOM.Server.renderToStaticMarkup
-- vanilla-extract sprinkles
+- React-JSX as static html template engine with ReactDOM.Server.renderToStaticMarkup
+- vanilla-extract recipes

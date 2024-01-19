@@ -3,7 +3,7 @@ import HamburgerIcon from "./hamburger.svg";
 import Navigation from "./Navigation";
 import { stack } from "../styles/recipes/stack.css";
 
-const TopBar: React.FC = () => {
+export const TopBar: React.FC = () => {
     return (
         <header className={stack({ gap: "small", align: "center" })}>
             <HamburgerIcon color="#AAA" />
@@ -12,5 +12,3 @@ const TopBar: React.FC = () => {
         </header>
     );
 };
-
-export default TopBar;
