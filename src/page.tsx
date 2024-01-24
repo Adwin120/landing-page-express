@@ -1,7 +1,7 @@
 import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { rootStyles } from "./styles/theme.css";
-import { TopBar } from "./components/TopBar";
+import { TopBar } from "./components/top-bar/TopBar";
 import { Carousel } from "./components/carousel/Carousel";
 import { AboutUs } from "./components/about-us/AboutUs";
 

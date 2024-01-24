@@ -1,7 +1,7 @@
 import React from "react";
 import HamburgerIcon from "./hamburger.svg";
 import Navigation from "./Navigation";
-import { stack } from "../styles/recipes/stack.css";
+import { stack } from "../../styles/recipes/stack.css";
 
 export const TopBar: React.FC = () => {
     return (

@@ -1,5 +1,5 @@
 import React from "react";
-import { stack } from "../styles/recipes/stack.css";
+import { stack } from "../../styles/recipes/stack.css";
 
 const Navigation: React.FC = () => {
     return (
