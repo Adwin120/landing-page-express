@@ -14,12 +14,13 @@ const Page = () => {
                     name="viewport"
                     content="width=device-width, initial-scale=1.0"
                 />
-                <title>Document</title>
+                <title>Room</title>
                 <link rel="stylesheet" href="main.css" />
             </head>
             <body className={rootStyles}>
-                <TopBar />
-                <Carousel />
+                <Carousel>
+                    <TopBar />
+                </Carousel>
                 <AboutUs />
             </body>
         </html>

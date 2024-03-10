@@ -1,4 +1,4 @@
-import React, { useId } from "react";
+import React, { PropsWithChildren, useId } from "react";
 import { CarouselItem } from "./CarouselItem";
 import { carousel } from "./carousel.css";
 
@@ -6,12 +6,13 @@ import image1 from "./images/desktop-image-hero-1.jpg";
 import image2 from "./images/desktop-image-hero-2.jpg";
 import image3 from "./images/desktop-image-hero-3.jpg";
 
-export const Carousel: React.FC = () => {
+export const Carousel: React.FC<PropsWithChildren> = ({children}) => {
     const item1 = useId();
     const item2 = useId();
     const item3 = useId();
     return (
         <div className={carousel}>
+            {children}
             <CarouselItem
                 content={{
                     coverImageSrc: image1,

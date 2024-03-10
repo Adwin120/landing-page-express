@@ -1,9 +1,9 @@
 import React from "react";
-import { stack } from "../../styles/recipes/stack.css";
+import { nav } from "./TopBar.css";
 
 const Navigation: React.FC = () => {
     return (
-        <nav className={stack({ gap: "small" })}>
+        <nav className={nav}>
             <a href="#">home</a>
             <a href="#">shop</a>
             <a href="#">about</a>

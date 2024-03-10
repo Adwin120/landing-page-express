@@ -20,9 +20,9 @@ export const stack = recipe({
         },
         gap: {
             none: { gap: "initial" },
-            small: { gap: "4px" }
+            small: { gap: "4px" },
             // medium: { gap: "8px" },
-            // large: { gap: "12px" }
+            large: { gap: "12px" }
         }
     },
     defaultVariants: {
