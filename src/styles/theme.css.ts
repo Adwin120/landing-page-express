@@ -1,10 +1,11 @@
 import { createTheme, fontFace, style } from "@vanilla-extract/css";
+import LeagueSpartanSrc from "../assets/LeagueSpartan.woff2"
 
 const LeagueSpartan = fontFace({
     fontStyle: "normal",
-    src: "url(https://fonts.gstatic.com/s/leaguespartan/v11/kJEnBuEW6A0lliaV_m88ja5Twtx8BWhtkDVmjZvM_oTZDc1dJgs.woff2) format('woff2')",
-    fontWeight: [400, 700],
-    fontDisplay: "fallback",
+    src: `url(${LeagueSpartanSrc}) format('woff2')`,
+    fontWeight: "100 900",
+    fontDisplay: "swap",
 });
 
 export const [themeProviderClass, theme] = createTheme({
@@ -16,9 +17,9 @@ export const [themeProviderClass, theme] = createTheme({
         bodyFontSize: "12",
         fontFamily: `${LeagueSpartan}, system-ui`,
         weights: {
-            normal: "500",
-            bold: "600",
-            bolder: "700"
+            medium: "500",
+            semibold: "600",
+            bold: "700"
         }
     }
 });
